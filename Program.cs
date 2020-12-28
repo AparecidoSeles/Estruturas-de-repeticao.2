@@ -19,6 +19,23 @@ namespace Estruturas_de_repeticao._2
             Console.WriteLine("Insira a senha do usuário");
             senhaUsuario = Console.ReadLine();
             
+            while (nomeUsuario == senhaUsuario)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("nome de usuário não pode ser igual a senha do usuário Digite novamete");
+                Console.ResetColor();
+
+                Console.WriteLine("Insira um nome de usuário");
+                nomeUsuario  = Console.ReadLine();
+
+                Console.WriteLine("Insira a senha do usuário");
+                senhaUsuario = Console.ReadLine();
+            }
+            
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Login efetuado com sucesso");
+            Console.ResetColor()
+
         }
     }
 }
